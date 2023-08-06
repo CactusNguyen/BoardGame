@@ -12,40 +12,628 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b92f79e7cb5616c49b80378dd56d8f1c, type: 3}
   m_Name: BoardLayout
   m_EditorClassIdentifier: 
-  Pieces:
-  - {fileID: 11400000, guid: 1f4cae535091e4f438fbe5cef4a5f6f9, type: 2}
-  - {fileID: 11400000, guid: 3d5a18156d53ac9408e3e216d3dcc231, type: 2}
-  - {fileID: 11400000, guid: 1e030bb4251e8694eaf4f3a79ccc77c7, type: 2}
-  - {fileID: 11400000, guid: 4b87c2e8bd7990c40926a66e63c0ce1b, type: 2}
-  - {fileID: 11400000, guid: 042b8af1d91c83443a7323f1c41784bb, type: 2}
-  - {fileID: 11400000, guid: 3d5a18156d53ac9408e3e216d3dcc231, type: 2}
-  - {fileID: 11400000, guid: 4b87c2e8bd7990c40926a66e63c0ce1b, type: 2}
-  - {fileID: 11400000, guid: 042b8af1d91c83443a7323f1c41784bb, type: 2}
-  - {fileID: 11400000, guid: 1e030bb4251e8694eaf4f3a79ccc77c7, type: 2}
-  - {fileID: 11400000, guid: 3d5a18156d53ac9408e3e216d3dcc231, type: 2}
-  - {fileID: 11400000, guid: 4b87c2e8bd7990c40926a66e63c0ce1b, type: 2}
-  - {fileID: 11400000, guid: 042b8af1d91c83443a7323f1c41784bb, type: 2}
-  - {fileID: 11400000, guid: 1e030bb4251e8694eaf4f3a79ccc77c7, type: 2}
-  - {fileID: 11400000, guid: 3d5a18156d53ac9408e3e216d3dcc231, type: 2}
-  - {fileID: 11400000, guid: 4b87c2e8bd7990c40926a66e63c0ce1b, type: 2}
-  - {fileID: 11400000, guid: 042b8af1d91c83443a7323f1c41784bb, type: 2}
-  - {fileID: 11400000, guid: 1e030bb4251e8694eaf4f3a79ccc77c7, type: 2}
-  - {fileID: 11400000, guid: 3d5a18156d53ac9408e3e216d3dcc231, type: 2}
-  - {fileID: 11400000, guid: 4b87c2e8bd7990c40926a66e63c0ce1b, type: 2}
-  - {fileID: 11400000, guid: 042b8af1d91c83443a7323f1c41784bb, type: 2}
-  - {fileID: 11400000, guid: 1e030bb4251e8694eaf4f3a79ccc77c7, type: 2}
-  - {fileID: 11400000, guid: 3d5a18156d53ac9408e3e216d3dcc231, type: 2}
-  - {fileID: 11400000, guid: 4b87c2e8bd7990c40926a66e63c0ce1b, type: 2}
-  - {fileID: 11400000, guid: 042b8af1d91c83443a7323f1c41784bb, type: 2}
-  - {fileID: 11400000, guid: 1e030bb4251e8694eaf4f3a79ccc77c7, type: 2}
-  - {fileID: 11400000, guid: 3d5a18156d53ac9408e3e216d3dcc231, type: 2}
-  - {fileID: 11400000, guid: 4b87c2e8bd7990c40926a66e63c0ce1b, type: 2}
-  - {fileID: 11400000, guid: 042b8af1d91c83443a7323f1c41784bb, type: 2}
-  - {fileID: 11400000, guid: 1e030bb4251e8694eaf4f3a79ccc77c7, type: 2}
-  - {fileID: 11400000, guid: 3d5a18156d53ac9408e3e216d3dcc231, type: 2}
-  - {fileID: 11400000, guid: 4b87c2e8bd7990c40926a66e63c0ce1b, type: 2}
-  - {fileID: 11400000, guid: 042b8af1d91c83443a7323f1c41784bb, type: 2}
-  - {fileID: 11400000, guid: 1e030bb4251e8694eaf4f3a79ccc77c7, type: 2}
-  - {fileID: 11400000, guid: 3d5a18156d53ac9408e3e216d3dcc231, type: 2}
-  - {fileID: 11400000, guid: 4b87c2e8bd7990c40926a66e63c0ce1b, type: 2}
-  - {fileID: 11400000, guid: 042b8af1d91c83443a7323f1c41784bb, type: 2}
+  Blocks:
+  - Name: Start
+    BlockColor: {r: 0.0627451, g: 0.97647065, b: 0.5921569, a: 1}
+    TextColor: {r: 1, g: 1, b: 1, a: 1}
+    Activation:
+      m_PersistentCalls:
+        m_Calls: []
+  - Name: Programmer
+    BlockColor: {r: 0.9490197, g: 0.28235295, b: 0.13333334, a: 1}
+    TextColor: {r: 1, g: 1, b: 1, a: 1}
+    Activation:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 11400000, guid: 53969d39892aadd43bdae64cf280fa41, type: 2}
+          m_TargetAssemblyTypeName: Activation, Assembly-CSharp
+          m_MethodName: DrawProgrammerCard
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+  - Name: Challenge
+    BlockColor: {r: 0.11764707, g: 0.11764707, b: 0.11764707, a: 1}
+    TextColor: {r: 1, g: 1, b: 1, a: 1}
+    Activation:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 11400000, guid: 53969d39892aadd43bdae64cf280fa41, type: 2}
+          m_TargetAssemblyTypeName: Activation, Assembly-CSharp
+          m_MethodName: DrawChallengeCard
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+  - Name: Artist
+    BlockColor: {r: 1, g: 0.80392164, b: 0.16078432, a: 1}
+    TextColor: {r: 1, g: 1, b: 1, a: 1}
+    Activation:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 11400000, guid: 53969d39892aadd43bdae64cf280fa41, type: 2}
+          m_TargetAssemblyTypeName: Activation, Assembly-CSharp
+          m_MethodName: DrawArtistCard
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+  - Name: Special
+    BlockColor: {r: 1, g: 1, b: 1, a: 1}
+    TextColor: {r: 0, g: 0, b: 0, a: 1}
+    Activation:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 11400000, guid: 53969d39892aadd43bdae64cf280fa41, type: 2}
+          m_TargetAssemblyTypeName: 
+          m_MethodName: 
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: 
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+  - Name: Outsource
+    BlockColor: {r: 0.60784316, g: 0.22352943, b: 0.13725491, a: 1}
+    TextColor: {r: 1, g: 1, b: 1, a: 1}
+    Activation:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 11400000, guid: 53969d39892aadd43bdae64cf280fa41, type: 2}
+          m_TargetAssemblyTypeName: Activation, Assembly-CSharp
+          m_MethodName: DrawOutSourceCard
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+  - Name: Special
+    BlockColor: {r: 1, g: 1, b: 1, a: 1}
+    TextColor: {r: 0, g: 0, b: 0, a: 1}
+    Activation:
+      m_PersistentCalls:
+        m_Calls: []
+  - Name: Challenge
+    BlockColor: {r: 0.11764707, g: 0.11764707, b: 0.11764707, a: 1}
+    TextColor: {r: 1, g: 1, b: 1, a: 1}
+    Activation:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 11400000, guid: 53969d39892aadd43bdae64cf280fa41, type: 2}
+          m_TargetAssemblyTypeName: Activation, Assembly-CSharp
+          m_MethodName: DrawChallengeCard
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+  - Name: Designer
+    BlockColor: {r: 0.078431375, g: 0.68235296, b: 0.36078432, a: 1}
+    TextColor: {r: 1, g: 1, b: 1, a: 1}
+    Activation:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 11400000, guid: 53969d39892aadd43bdae64cf280fa41, type: 2}
+          m_TargetAssemblyTypeName: Activation, Assembly-CSharp
+          m_MethodName: DrawDesignerCard
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+  - Name: Challenge
+    BlockColor: {r: 0.11764707, g: 0.11764707, b: 0.11764707, a: 1}
+    TextColor: {r: 1, g: 1, b: 1, a: 1}
+    Activation:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 11400000, guid: 53969d39892aadd43bdae64cf280fa41, type: 2}
+          m_TargetAssemblyTypeName: Activation, Assembly-CSharp
+          m_MethodName: DrawChallengeCard
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+  - Name: Project
+    BlockColor: {r: 0.5921569, g: 0.2784314, b: 1, a: 1}
+    TextColor: {r: 1, g: 1, b: 1, a: 1}
+    Activation:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 11400000, guid: 53969d39892aadd43bdae64cf280fa41, type: 2}
+          m_TargetAssemblyTypeName: Activation, Assembly-CSharp
+          m_MethodName: DrawProjectCard
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+  - Name: Marketing
+    BlockColor: {r: 0.050980397, g: 0.6, b: 1, a: 1}
+    TextColor: {r: 1, g: 1, b: 1, a: 1}
+    Activation:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 11400000, guid: 53969d39892aadd43bdae64cf280fa41, type: 2}
+          m_TargetAssemblyTypeName: Activation, Game
+          m_MethodName: DrawMarketingCard
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+  - Name: Artist
+    BlockColor: {r: 1, g: 0.80392164, b: 0.16078432, a: 1}
+    TextColor: {r: 1, g: 1, b: 1, a: 1}
+    Activation:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 11400000, guid: 53969d39892aadd43bdae64cf280fa41, type: 2}
+          m_TargetAssemblyTypeName: Activation, Assembly-CSharp
+          m_MethodName: DrawArtistCard
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+  - Name: Project
+    BlockColor: {r: 0.5921569, g: 0.2784314, b: 1, a: 1}
+    TextColor: {r: 1, g: 1, b: 1, a: 1}
+    Activation:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 11400000, guid: 53969d39892aadd43bdae64cf280fa41, type: 2}
+          m_TargetAssemblyTypeName: Activation, Assembly-CSharp
+          m_MethodName: DrawProjectCard
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+  - Name: Programmer
+    BlockColor: {r: 0.9490197, g: 0.28235295, b: 0.13333334, a: 1}
+    TextColor: {r: 1, g: 1, b: 1, a: 1}
+    Activation:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 11400000, guid: 53969d39892aadd43bdae64cf280fa41, type: 2}
+          m_TargetAssemblyTypeName: Activation, Assembly-CSharp
+          m_MethodName: DrawProgrammerCard
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+  - Name: Outsource
+    BlockColor: {r: 0.60784316, g: 0.22352943, b: 0.13725491, a: 1}
+    TextColor: {r: 1, g: 1, b: 1, a: 1}
+    Activation:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 11400000, guid: 53969d39892aadd43bdae64cf280fa41, type: 2}
+          m_TargetAssemblyTypeName: Activation, Assembly-CSharp
+          m_MethodName: DrawOutSourceCard
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+  - Name: Special
+    BlockColor: {r: 1, g: 1, b: 1, a: 1}
+    TextColor: {r: 0, g: 0, b: 0, a: 1}
+    Activation:
+      m_PersistentCalls:
+        m_Calls: []
+  - Name: Challenge
+    BlockColor: {r: 0.11764707, g: 0.11764707, b: 0.11764707, a: 1}
+    TextColor: {r: 1, g: 1, b: 1, a: 1}
+    Activation:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 11400000, guid: 53969d39892aadd43bdae64cf280fa41, type: 2}
+          m_TargetAssemblyTypeName: Activation, Assembly-CSharp
+          m_MethodName: DrawChallengeCard
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+  - Name: Designer
+    BlockColor: {r: 0.078431375, g: 0.68235296, b: 0.36078432, a: 1}
+    TextColor: {r: 1, g: 1, b: 1, a: 1}
+    Activation:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 11400000, guid: 53969d39892aadd43bdae64cf280fa41, type: 2}
+          m_TargetAssemblyTypeName: Activation, Assembly-CSharp
+          m_MethodName: DrawDesignerCard
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+  - Name: Challenge
+    BlockColor: {r: 0.11764707, g: 0.11764707, b: 0.11764707, a: 1}
+    TextColor: {r: 1, g: 1, b: 1, a: 1}
+    Activation:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 11400000, guid: 53969d39892aadd43bdae64cf280fa41, type: 2}
+          m_TargetAssemblyTypeName: Activation, Assembly-CSharp
+          m_MethodName: DrawChallengeCard
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+  - Name: Litigation
+    BlockColor: {r: 1, g: 0.6509804, b: 0.16078432, a: 1}
+    TextColor: {r: 1, g: 1, b: 1, a: 1}
+    Activation:
+      m_PersistentCalls:
+        m_Calls: []
+  - Name: Marketing
+    BlockColor: {r: 0.050980397, g: 0.6, b: 1, a: 1}
+    TextColor: {r: 1, g: 1, b: 1, a: 1}
+    Activation:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 11400000, guid: 53969d39892aadd43bdae64cf280fa41, type: 2}
+          m_TargetAssemblyTypeName: Activation, Game
+          m_MethodName: DrawMarketingCard
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+  - Name: Artist
+    BlockColor: {r: 1, g: 0.80392164, b: 0.16078432, a: 1}
+    TextColor: {r: 1, g: 1, b: 1, a: 1}
+    Activation:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 11400000, guid: 53969d39892aadd43bdae64cf280fa41, type: 2}
+          m_TargetAssemblyTypeName: Activation, Assembly-CSharp
+          m_MethodName: DrawArtistCard
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+  - Name: Project
+    BlockColor: {r: 0.5921569, g: 0.2784314, b: 1, a: 1}
+    TextColor: {r: 1, g: 1, b: 1, a: 1}
+    Activation:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 11400000, guid: 53969d39892aadd43bdae64cf280fa41, type: 2}
+          m_TargetAssemblyTypeName: Activation, Assembly-CSharp
+          m_MethodName: DrawProjectCard
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+  - Name: Special
+    BlockColor: {r: 1, g: 1, b: 1, a: 1}
+    TextColor: {r: 0, g: 0, b: 0, a: 1}
+    Activation:
+      m_PersistentCalls:
+        m_Calls: []
+  - Name: Outsource
+    BlockColor: {r: 0.60784316, g: 0.22352943, b: 0.13725491, a: 1}
+    TextColor: {r: 1, g: 1, b: 1, a: 1}
+    Activation:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 11400000, guid: 53969d39892aadd43bdae64cf280fa41, type: 2}
+          m_TargetAssemblyTypeName: Activation, Assembly-CSharp
+          m_MethodName: DrawOutSourceCard
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+  - Name: Programmer
+    BlockColor: {r: 0.9490197, g: 0.28235295, b: 0.13333334, a: 1}
+    TextColor: {r: 1, g: 1, b: 1, a: 1}
+    Activation:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 11400000, guid: 53969d39892aadd43bdae64cf280fa41, type: 2}
+          m_TargetAssemblyTypeName: Activation, Assembly-CSharp
+          m_MethodName: DrawProgrammerCard
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+  - Name: Challenge
+    BlockColor: {r: 0.11764707, g: 0.11764707, b: 0.11764707, a: 1}
+    TextColor: {r: 1, g: 1, b: 1, a: 1}
+    Activation:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 11400000, guid: 53969d39892aadd43bdae64cf280fa41, type: 2}
+          m_TargetAssemblyTypeName: Activation, Assembly-CSharp
+          m_MethodName: DrawChallengeCard
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+  - Name: Special
+    BlockColor: {r: 1, g: 1, b: 1, a: 1}
+    TextColor: {r: 0, g: 0, b: 0, a: 1}
+    Activation:
+      m_PersistentCalls:
+        m_Calls: []
+  - Name: Marketing
+    BlockColor: {r: 0.050980397, g: 0.6, b: 1, a: 1}
+    TextColor: {r: 1, g: 1, b: 1, a: 1}
+    Activation:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 11400000, guid: 53969d39892aadd43bdae64cf280fa41, type: 2}
+          m_TargetAssemblyTypeName: Activation, Game
+          m_MethodName: DrawMarketingCard
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+  - Name: Project
+    BlockColor: {r: 0.5921569, g: 0.2784314, b: 1, a: 1}
+    TextColor: {r: 1, g: 1, b: 1, a: 1}
+    Activation:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 11400000, guid: 53969d39892aadd43bdae64cf280fa41, type: 2}
+          m_TargetAssemblyTypeName: Activation, Assembly-CSharp
+          m_MethodName: DrawProjectCard
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+  - Name: Challenge
+    BlockColor: {r: 0.11764707, g: 0.11764707, b: 0.11764707, a: 1}
+    TextColor: {r: 1, g: 1, b: 1, a: 1}
+    Activation:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 11400000, guid: 53969d39892aadd43bdae64cf280fa41, type: 2}
+          m_TargetAssemblyTypeName: Activation, Assembly-CSharp
+          m_MethodName: DrawChallengeCard
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+  - Name: Designer
+    BlockColor: {r: 0.078431375, g: 0.68235296, b: 0.36078432, a: 1}
+    TextColor: {r: 1, g: 1, b: 1, a: 1}
+    Activation:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 11400000, guid: 53969d39892aadd43bdae64cf280fa41, type: 2}
+          m_TargetAssemblyTypeName: Activation, Assembly-CSharp
+          m_MethodName: DrawDesignerCard
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+  - Name: Artist
+    BlockColor: {r: 1, g: 0.80392164, b: 0.16078432, a: 1}
+    TextColor: {r: 1, g: 1, b: 1, a: 1}
+    Activation:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 11400000, guid: 53969d39892aadd43bdae64cf280fa41, type: 2}
+          m_TargetAssemblyTypeName: Activation, Assembly-CSharp
+          m_MethodName: DrawArtistCard
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+  - Name: Special
+    BlockColor: {r: 1, g: 1, b: 1, a: 1}
+    TextColor: {r: 0, g: 0, b: 0, a: 1}
+    Activation:
+      m_PersistentCalls:
+        m_Calls: []
+  - Name: Outsource
+    BlockColor: {r: 0.60784316, g: 0.22352943, b: 0.13725491, a: 1}
+    TextColor: {r: 1, g: 1, b: 1, a: 1}
+    Activation:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 11400000, guid: 53969d39892aadd43bdae64cf280fa41, type: 2}
+          m_TargetAssemblyTypeName: Activation, Assembly-CSharp
+          m_MethodName: DrawOutSourceCard
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+  - Name: Special
+    BlockColor: {r: 1, g: 1, b: 1, a: 1}
+    TextColor: {r: 0, g: 0, b: 0, a: 1}
+    Activation:
+      m_PersistentCalls:
+        m_Calls: []
+  - Name: Challenge
+    BlockColor: {r: 0.11764707, g: 0.11764707, b: 0.11764707, a: 1}
+    TextColor: {r: 1, g: 1, b: 1, a: 1}
+    Activation:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 11400000, guid: 53969d39892aadd43bdae64cf280fa41, type: 2}
+          m_TargetAssemblyTypeName: Activation, Assembly-CSharp
+          m_MethodName: DrawChallengeCard
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+  - Name: Project
+    BlockColor: {r: 0.5921569, g: 0.2784314, b: 1, a: 1}
+    TextColor: {r: 1, g: 1, b: 1, a: 1}
+    Activation:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 11400000, guid: 53969d39892aadd43bdae64cf280fa41, type: 2}
+          m_TargetAssemblyTypeName: Activation, Assembly-CSharp
+          m_MethodName: DrawProjectCard
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+  - Name: Challenge
+    BlockColor: {r: 0.11764707, g: 0.11764707, b: 0.11764707, a: 1}
+    TextColor: {r: 1, g: 1, b: 1, a: 1}
+    Activation:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 11400000, guid: 53969d39892aadd43bdae64cf280fa41, type: 2}
+          m_TargetAssemblyTypeName: Activation, Assembly-CSharp
+          m_MethodName: DrawChallengeCard
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2

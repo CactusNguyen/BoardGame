@@ -1,0 +1,44 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0d6eb0c6f16bece418016d713435e9f2, type: 3}
+  m_Name: ExampleDesigner
+  m_EditorClassIdentifier: 
+  Name: Example Designer
+  Identity: {fileID: 0}
+  Detail: 
+  Color: {r: 0.078431375, g: 0.68235296, b: 0.36078432, a: 1}
+  TextColor: {r: 0, g: 0, b: 0, a: 1}
+  Precondition:
+    _target: {fileID: 11400000, guid: f08a90565e034844193a030f21208c7c, type: 2}
+    _methodName: Free
+    _args: []
+    _dynamic: 0
+    _typeName: Condition, Game, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+    dirty: 0
+  OnFinishTurn:
+    m_PersistentCalls:
+      m_Calls: []
+  OnFinishCycle:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 11400000, guid: 53969d39892aadd43bdae64cf280fa41, type: 2}
+        m_TargetAssemblyTypeName: Activation, Assembly-CSharp
+        m_MethodName: ChangeFinance
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: -200
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
