@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class CardStack : MonoBehaviour
 {
+    [SerializeField] private Identity _identity;
+    public Identity Identity => _identity;
     [SerializeField] private CardAttribute[] _cardTypes;
     [SerializeField] private int[] _numberPerType;
     [SerializeField] private Card _cardPrefab;

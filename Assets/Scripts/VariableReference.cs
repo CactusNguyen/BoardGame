@@ -40,9 +40,9 @@ public class IntegerReference : VariableReference<int>
 }
 
 [Serializable]
-public class BoolReference : VariableReference<bool>
+public class BooleanReference : VariableReference<bool>
 {
-    public static implicit operator bool(BoolReference reference)
+    public static implicit operator bool(BooleanReference reference)
     {
         return reference.Value;
     }

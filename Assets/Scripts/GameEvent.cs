@@ -7,7 +7,7 @@ public class GameEvent : ScriptableObject
     /// <summary>
     /// The list of listeners that this event will notify if it is raised.
     /// </summary>
-    private readonly List<GameEventListener> _eventListeners = new();
+    [SerializeField] private List<GameEventListener> _eventListeners = new();
 
     public void Raise()
     {

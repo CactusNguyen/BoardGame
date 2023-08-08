@@ -25,9 +25,9 @@ MonoBehaviour:
     Activation:
       m_PersistentCalls:
         m_Calls:
-        - m_Target: {fileID: 11400000, guid: 53969d39892aadd43bdae64cf280fa41, type: 2}
-          m_TargetAssemblyTypeName: Activation, Assembly-CSharp
-          m_MethodName: DrawProgrammerCard
+        - m_Target: {fileID: 11400000, guid: 8f22746f7e938b640a693ec3e96b9f58, type: 2}
+          m_TargetAssemblyTypeName: GameEvent, Game
+          m_MethodName: Raise
           m_Mode: 1
           m_Arguments:
             m_ObjectArgument: {fileID: 0}
@@ -43,9 +43,9 @@ MonoBehaviour:
     Activation:
       m_PersistentCalls:
         m_Calls:
-        - m_Target: {fileID: 11400000, guid: 53969d39892aadd43bdae64cf280fa41, type: 2}
-          m_TargetAssemblyTypeName: Activation, Assembly-CSharp
-          m_MethodName: DrawChallengeCard
+        - m_Target: {fileID: 11400000, guid: 000d7598580b486418630af899ba02a2, type: 2}
+          m_TargetAssemblyTypeName: GameEvent, Game
+          m_MethodName: Raise
           m_Mode: 1
           m_Arguments:
             m_ObjectArgument: {fileID: 0}
@@ -61,9 +61,9 @@ MonoBehaviour:
     Activation:
       m_PersistentCalls:
         m_Calls:
-        - m_Target: {fileID: 11400000, guid: 53969d39892aadd43bdae64cf280fa41, type: 2}
-          m_TargetAssemblyTypeName: Activation, Assembly-CSharp
-          m_MethodName: DrawArtistCard
+        - m_Target: {fileID: 11400000, guid: 3c6696cd2b058d645892ddbbe7aff85a, type: 2}
+          m_TargetAssemblyTypeName: GameEvent, Game
+          m_MethodName: Raise
           m_Mode: 1
           m_Arguments:
             m_ObjectArgument: {fileID: 0}
@@ -78,28 +78,16 @@ MonoBehaviour:
     TextColor: {r: 0, g: 0, b: 0, a: 1}
     Activation:
       m_PersistentCalls:
-        m_Calls:
-        - m_Target: {fileID: 11400000, guid: 53969d39892aadd43bdae64cf280fa41, type: 2}
-          m_TargetAssemblyTypeName: 
-          m_MethodName: 
-          m_Mode: 1
-          m_Arguments:
-            m_ObjectArgument: {fileID: 0}
-            m_ObjectArgumentAssemblyTypeName: 
-            m_IntArgument: 0
-            m_FloatArgument: 0
-            m_StringArgument: 
-            m_BoolArgument: 0
-          m_CallState: 2
+        m_Calls: []
   - Name: Outsource
     BlockColor: {r: 0.60784316, g: 0.22352943, b: 0.13725491, a: 1}
     TextColor: {r: 1, g: 1, b: 1, a: 1}
     Activation:
       m_PersistentCalls:
         m_Calls:
-        - m_Target: {fileID: 11400000, guid: 53969d39892aadd43bdae64cf280fa41, type: 2}
-          m_TargetAssemblyTypeName: Activation, Assembly-CSharp
-          m_MethodName: DrawOutSourceCard
+        - m_Target: {fileID: 11400000, guid: afb9c922cbef7d54cb2514f3509241ce, type: 2}
+          m_TargetAssemblyTypeName: GameEvent, Game
+          m_MethodName: Raise
           m_Mode: 1
           m_Arguments:
             m_ObjectArgument: {fileID: 0}
@@ -121,9 +109,9 @@ MonoBehaviour:
     Activation:
       m_PersistentCalls:
         m_Calls:
-        - m_Target: {fileID: 11400000, guid: 53969d39892aadd43bdae64cf280fa41, type: 2}
-          m_TargetAssemblyTypeName: Activation, Assembly-CSharp
-          m_MethodName: DrawChallengeCard
+        - m_Target: {fileID: 11400000, guid: 000d7598580b486418630af899ba02a2, type: 2}
+          m_TargetAssemblyTypeName: GameEvent, Game
+          m_MethodName: Raise
           m_Mode: 1
           m_Arguments:
             m_ObjectArgument: {fileID: 0}
@@ -139,9 +127,9 @@ MonoBehaviour:
     Activation:
       m_PersistentCalls:
         m_Calls:
-        - m_Target: {fileID: 11400000, guid: 53969d39892aadd43bdae64cf280fa41, type: 2}
-          m_TargetAssemblyTypeName: Activation, Assembly-CSharp
-          m_MethodName: DrawDesignerCard
+        - m_Target: {fileID: 11400000, guid: b9e4bb82da1766049911f6ba4178065b, type: 2}
+          m_TargetAssemblyTypeName: GameEvent, Game
+          m_MethodName: Raise
           m_Mode: 1
           m_Arguments:
             m_ObjectArgument: {fileID: 0}
@@ -157,9 +145,9 @@ MonoBehaviour:
     Activation:
       m_PersistentCalls:
         m_Calls:
-        - m_Target: {fileID: 11400000, guid: 53969d39892aadd43bdae64cf280fa41, type: 2}
-          m_TargetAssemblyTypeName: Activation, Assembly-CSharp
-          m_MethodName: DrawChallengeCard
+        - m_Target: {fileID: 11400000, guid: 000d7598580b486418630af899ba02a2, type: 2}
+          m_TargetAssemblyTypeName: GameEvent, Game
+          m_MethodName: Raise
           m_Mode: 1
           m_Arguments:
             m_ObjectArgument: {fileID: 0}
@@ -175,9 +163,9 @@ MonoBehaviour:
     Activation:
       m_PersistentCalls:
         m_Calls:
-        - m_Target: {fileID: 11400000, guid: 53969d39892aadd43bdae64cf280fa41, type: 2}
-          m_TargetAssemblyTypeName: Activation, Assembly-CSharp
-          m_MethodName: DrawProjectCard
+        - m_Target: {fileID: 11400000, guid: f140d7eee81d8e64ab417256ee7df831, type: 2}
+          m_TargetAssemblyTypeName: GameEvent, Game
+          m_MethodName: Raise
           m_Mode: 1
           m_Arguments:
             m_ObjectArgument: {fileID: 0}
@@ -193,9 +181,9 @@ MonoBehaviour:
     Activation:
       m_PersistentCalls:
         m_Calls:
-        - m_Target: {fileID: 11400000, guid: 53969d39892aadd43bdae64cf280fa41, type: 2}
-          m_TargetAssemblyTypeName: Activation, Game
-          m_MethodName: DrawMarketingCard
+        - m_Target: {fileID: 11400000, guid: af0c4b2df6bea174fae0acbfda6ac481, type: 2}
+          m_TargetAssemblyTypeName: GameEvent, Game
+          m_MethodName: Raise
           m_Mode: 1
           m_Arguments:
             m_ObjectArgument: {fileID: 0}
@@ -211,9 +199,9 @@ MonoBehaviour:
     Activation:
       m_PersistentCalls:
         m_Calls:
-        - m_Target: {fileID: 11400000, guid: 53969d39892aadd43bdae64cf280fa41, type: 2}
-          m_TargetAssemblyTypeName: Activation, Assembly-CSharp
-          m_MethodName: DrawArtistCard
+        - m_Target: {fileID: 11400000, guid: 3c6696cd2b058d645892ddbbe7aff85a, type: 2}
+          m_TargetAssemblyTypeName: GameEvent, Game
+          m_MethodName: Raise
           m_Mode: 1
           m_Arguments:
             m_ObjectArgument: {fileID: 0}
@@ -229,9 +217,9 @@ MonoBehaviour:
     Activation:
       m_PersistentCalls:
         m_Calls:
-        - m_Target: {fileID: 11400000, guid: 53969d39892aadd43bdae64cf280fa41, type: 2}
-          m_TargetAssemblyTypeName: Activation, Assembly-CSharp
-          m_MethodName: DrawProjectCard
+        - m_Target: {fileID: 11400000, guid: f140d7eee81d8e64ab417256ee7df831, type: 2}
+          m_TargetAssemblyTypeName: GameEvent, Game
+          m_MethodName: Raise
           m_Mode: 1
           m_Arguments:
             m_ObjectArgument: {fileID: 0}
@@ -247,9 +235,9 @@ MonoBehaviour:
     Activation:
       m_PersistentCalls:
         m_Calls:
-        - m_Target: {fileID: 11400000, guid: 53969d39892aadd43bdae64cf280fa41, type: 2}
-          m_TargetAssemblyTypeName: Activation, Assembly-CSharp
-          m_MethodName: DrawProgrammerCard
+        - m_Target: {fileID: 11400000, guid: 8f22746f7e938b640a693ec3e96b9f58, type: 2}
+          m_TargetAssemblyTypeName: GameEvent, Game
+          m_MethodName: Raise
           m_Mode: 1
           m_Arguments:
             m_ObjectArgument: {fileID: 0}
@@ -265,9 +253,9 @@ MonoBehaviour:
     Activation:
       m_PersistentCalls:
         m_Calls:
-        - m_Target: {fileID: 11400000, guid: 53969d39892aadd43bdae64cf280fa41, type: 2}
-          m_TargetAssemblyTypeName: Activation, Assembly-CSharp
-          m_MethodName: DrawOutSourceCard
+        - m_Target: {fileID: 11400000, guid: afb9c922cbef7d54cb2514f3509241ce, type: 2}
+          m_TargetAssemblyTypeName: GameEvent, Game
+          m_MethodName: Raise
           m_Mode: 1
           m_Arguments:
             m_ObjectArgument: {fileID: 0}
@@ -289,9 +277,9 @@ MonoBehaviour:
     Activation:
       m_PersistentCalls:
         m_Calls:
-        - m_Target: {fileID: 11400000, guid: 53969d39892aadd43bdae64cf280fa41, type: 2}
-          m_TargetAssemblyTypeName: Activation, Assembly-CSharp
-          m_MethodName: DrawChallengeCard
+        - m_Target: {fileID: 11400000, guid: 000d7598580b486418630af899ba02a2, type: 2}
+          m_TargetAssemblyTypeName: GameEvent, Game
+          m_MethodName: Raise
           m_Mode: 1
           m_Arguments:
             m_ObjectArgument: {fileID: 0}
@@ -307,9 +295,9 @@ MonoBehaviour:
     Activation:
       m_PersistentCalls:
         m_Calls:
-        - m_Target: {fileID: 11400000, guid: 53969d39892aadd43bdae64cf280fa41, type: 2}
-          m_TargetAssemblyTypeName: Activation, Assembly-CSharp
-          m_MethodName: DrawDesignerCard
+        - m_Target: {fileID: 11400000, guid: b9e4bb82da1766049911f6ba4178065b, type: 2}
+          m_TargetAssemblyTypeName: GameEvent, Game
+          m_MethodName: Raise
           m_Mode: 1
           m_Arguments:
             m_ObjectArgument: {fileID: 0}
@@ -325,9 +313,9 @@ MonoBehaviour:
     Activation:
       m_PersistentCalls:
         m_Calls:
-        - m_Target: {fileID: 11400000, guid: 53969d39892aadd43bdae64cf280fa41, type: 2}
-          m_TargetAssemblyTypeName: Activation, Assembly-CSharp
-          m_MethodName: DrawChallengeCard
+        - m_Target: {fileID: 11400000, guid: 000d7598580b486418630af899ba02a2, type: 2}
+          m_TargetAssemblyTypeName: GameEvent, Game
+          m_MethodName: Raise
           m_Mode: 1
           m_Arguments:
             m_ObjectArgument: {fileID: 0}
@@ -349,9 +337,9 @@ MonoBehaviour:
     Activation:
       m_PersistentCalls:
         m_Calls:
-        - m_Target: {fileID: 11400000, guid: 53969d39892aadd43bdae64cf280fa41, type: 2}
-          m_TargetAssemblyTypeName: Activation, Game
-          m_MethodName: DrawMarketingCard
+        - m_Target: {fileID: 11400000, guid: af0c4b2df6bea174fae0acbfda6ac481, type: 2}
+          m_TargetAssemblyTypeName: GameEvent, Game
+          m_MethodName: Raise
           m_Mode: 1
           m_Arguments:
             m_ObjectArgument: {fileID: 0}
@@ -367,9 +355,9 @@ MonoBehaviour:
     Activation:
       m_PersistentCalls:
         m_Calls:
-        - m_Target: {fileID: 11400000, guid: 53969d39892aadd43bdae64cf280fa41, type: 2}
-          m_TargetAssemblyTypeName: Activation, Assembly-CSharp
-          m_MethodName: DrawArtistCard
+        - m_Target: {fileID: 11400000, guid: 3c6696cd2b058d645892ddbbe7aff85a, type: 2}
+          m_TargetAssemblyTypeName: GameEvent, Game
+          m_MethodName: Raise
           m_Mode: 1
           m_Arguments:
             m_ObjectArgument: {fileID: 0}
@@ -385,9 +373,9 @@ MonoBehaviour:
     Activation:
       m_PersistentCalls:
         m_Calls:
-        - m_Target: {fileID: 11400000, guid: 53969d39892aadd43bdae64cf280fa41, type: 2}
-          m_TargetAssemblyTypeName: Activation, Assembly-CSharp
-          m_MethodName: DrawProjectCard
+        - m_Target: {fileID: 11400000, guid: f140d7eee81d8e64ab417256ee7df831, type: 2}
+          m_TargetAssemblyTypeName: GameEvent, Game
+          m_MethodName: Raise
           m_Mode: 1
           m_Arguments:
             m_ObjectArgument: {fileID: 0}
@@ -409,9 +397,9 @@ MonoBehaviour:
     Activation:
       m_PersistentCalls:
         m_Calls:
-        - m_Target: {fileID: 11400000, guid: 53969d39892aadd43bdae64cf280fa41, type: 2}
-          m_TargetAssemblyTypeName: Activation, Assembly-CSharp
-          m_MethodName: DrawOutSourceCard
+        - m_Target: {fileID: 11400000, guid: afb9c922cbef7d54cb2514f3509241ce, type: 2}
+          m_TargetAssemblyTypeName: GameEvent, Game
+          m_MethodName: Raise
           m_Mode: 1
           m_Arguments:
             m_ObjectArgument: {fileID: 0}
@@ -427,9 +415,9 @@ MonoBehaviour:
     Activation:
       m_PersistentCalls:
         m_Calls:
-        - m_Target: {fileID: 11400000, guid: 53969d39892aadd43bdae64cf280fa41, type: 2}
-          m_TargetAssemblyTypeName: Activation, Assembly-CSharp
-          m_MethodName: DrawProgrammerCard
+        - m_Target: {fileID: 11400000, guid: 8f22746f7e938b640a693ec3e96b9f58, type: 2}
+          m_TargetAssemblyTypeName: GameEvent, Game
+          m_MethodName: Raise
           m_Mode: 1
           m_Arguments:
             m_ObjectArgument: {fileID: 0}
@@ -445,9 +433,9 @@ MonoBehaviour:
     Activation:
       m_PersistentCalls:
         m_Calls:
-        - m_Target: {fileID: 11400000, guid: 53969d39892aadd43bdae64cf280fa41, type: 2}
-          m_TargetAssemblyTypeName: Activation, Assembly-CSharp
-          m_MethodName: DrawChallengeCard
+        - m_Target: {fileID: 11400000, guid: 000d7598580b486418630af899ba02a2, type: 2}
+          m_TargetAssemblyTypeName: GameEvent, Game
+          m_MethodName: Raise
           m_Mode: 1
           m_Arguments:
             m_ObjectArgument: {fileID: 0}
@@ -469,9 +457,9 @@ MonoBehaviour:
     Activation:
       m_PersistentCalls:
         m_Calls:
-        - m_Target: {fileID: 11400000, guid: 53969d39892aadd43bdae64cf280fa41, type: 2}
-          m_TargetAssemblyTypeName: Activation, Game
-          m_MethodName: DrawMarketingCard
+        - m_Target: {fileID: 11400000, guid: af0c4b2df6bea174fae0acbfda6ac481, type: 2}
+          m_TargetAssemblyTypeName: GameEvent, Game
+          m_MethodName: Raise
           m_Mode: 1
           m_Arguments:
             m_ObjectArgument: {fileID: 0}
@@ -487,9 +475,9 @@ MonoBehaviour:
     Activation:
       m_PersistentCalls:
         m_Calls:
-        - m_Target: {fileID: 11400000, guid: 53969d39892aadd43bdae64cf280fa41, type: 2}
-          m_TargetAssemblyTypeName: Activation, Assembly-CSharp
-          m_MethodName: DrawProjectCard
+        - m_Target: {fileID: 11400000, guid: f140d7eee81d8e64ab417256ee7df831, type: 2}
+          m_TargetAssemblyTypeName: GameEvent, Game
+          m_MethodName: Raise
           m_Mode: 1
           m_Arguments:
             m_ObjectArgument: {fileID: 0}
@@ -505,9 +493,9 @@ MonoBehaviour:
     Activation:
       m_PersistentCalls:
         m_Calls:
-        - m_Target: {fileID: 11400000, guid: 53969d39892aadd43bdae64cf280fa41, type: 2}
-          m_TargetAssemblyTypeName: Activation, Assembly-CSharp
-          m_MethodName: DrawChallengeCard
+        - m_Target: {fileID: 11400000, guid: 000d7598580b486418630af899ba02a2, type: 2}
+          m_TargetAssemblyTypeName: GameEvent, Game
+          m_MethodName: Raise
           m_Mode: 1
           m_Arguments:
             m_ObjectArgument: {fileID: 0}
@@ -523,9 +511,9 @@ MonoBehaviour:
     Activation:
       m_PersistentCalls:
         m_Calls:
-        - m_Target: {fileID: 11400000, guid: 53969d39892aadd43bdae64cf280fa41, type: 2}
-          m_TargetAssemblyTypeName: Activation, Assembly-CSharp
-          m_MethodName: DrawDesignerCard
+        - m_Target: {fileID: 11400000, guid: b9e4bb82da1766049911f6ba4178065b, type: 2}
+          m_TargetAssemblyTypeName: GameEvent, Game
+          m_MethodName: Raise
           m_Mode: 1
           m_Arguments:
             m_ObjectArgument: {fileID: 0}
@@ -541,9 +529,9 @@ MonoBehaviour:
     Activation:
       m_PersistentCalls:
         m_Calls:
-        - m_Target: {fileID: 11400000, guid: 53969d39892aadd43bdae64cf280fa41, type: 2}
-          m_TargetAssemblyTypeName: Activation, Assembly-CSharp
-          m_MethodName: DrawArtistCard
+        - m_Target: {fileID: 11400000, guid: 3c6696cd2b058d645892ddbbe7aff85a, type: 2}
+          m_TargetAssemblyTypeName: GameEvent, Game
+          m_MethodName: Raise
           m_Mode: 1
           m_Arguments:
             m_ObjectArgument: {fileID: 0}
@@ -565,9 +553,9 @@ MonoBehaviour:
     Activation:
       m_PersistentCalls:
         m_Calls:
-        - m_Target: {fileID: 11400000, guid: 53969d39892aadd43bdae64cf280fa41, type: 2}
-          m_TargetAssemblyTypeName: Activation, Assembly-CSharp
-          m_MethodName: DrawOutSourceCard
+        - m_Target: {fileID: 11400000, guid: afb9c922cbef7d54cb2514f3509241ce, type: 2}
+          m_TargetAssemblyTypeName: GameEvent, Game
+          m_MethodName: Raise
           m_Mode: 1
           m_Arguments:
             m_ObjectArgument: {fileID: 0}
@@ -589,9 +577,9 @@ MonoBehaviour:
     Activation:
       m_PersistentCalls:
         m_Calls:
-        - m_Target: {fileID: 11400000, guid: 53969d39892aadd43bdae64cf280fa41, type: 2}
-          m_TargetAssemblyTypeName: Activation, Assembly-CSharp
-          m_MethodName: DrawChallengeCard
+        - m_Target: {fileID: 11400000, guid: 000d7598580b486418630af899ba02a2, type: 2}
+          m_TargetAssemblyTypeName: GameEvent, Game
+          m_MethodName: Raise
           m_Mode: 1
           m_Arguments:
             m_ObjectArgument: {fileID: 0}
@@ -607,9 +595,9 @@ MonoBehaviour:
     Activation:
       m_PersistentCalls:
         m_Calls:
-        - m_Target: {fileID: 11400000, guid: 53969d39892aadd43bdae64cf280fa41, type: 2}
-          m_TargetAssemblyTypeName: Activation, Assembly-CSharp
-          m_MethodName: DrawProjectCard
+        - m_Target: {fileID: 11400000, guid: f140d7eee81d8e64ab417256ee7df831, type: 2}
+          m_TargetAssemblyTypeName: GameEvent, Game
+          m_MethodName: Raise
           m_Mode: 1
           m_Arguments:
             m_ObjectArgument: {fileID: 0}
@@ -625,9 +613,9 @@ MonoBehaviour:
     Activation:
       m_PersistentCalls:
         m_Calls:
-        - m_Target: {fileID: 11400000, guid: 53969d39892aadd43bdae64cf280fa41, type: 2}
-          m_TargetAssemblyTypeName: Activation, Assembly-CSharp
-          m_MethodName: DrawChallengeCard
+        - m_Target: {fileID: 11400000, guid: 000d7598580b486418630af899ba02a2, type: 2}
+          m_TargetAssemblyTypeName: GameEvent, Game
+          m_MethodName: Raise
           m_Mode: 1
           m_Arguments:
             m_ObjectArgument: {fileID: 0}

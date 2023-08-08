@@ -1,98 +1,100 @@
 using System.Collections;
 using UnityEngine;
+using UnityEngine.Events;
 
 public class GameMaster : MonoBehaviour
 {
-    public static GameMaster Ins;
-
-    [SerializeField] private Player[] _players;
-    [SerializeField] private Dice[] _dices;
+    [SerializeField] private PlayerController[] _players;
     [SerializeField] private Vector3 _cardPreviewPosition;
     [SerializeField] private Quaternion _cardPreviewRotation;
     [SerializeField] private CardStack[] _cardStacks;
+    [SerializeField] private GameEvent _dice;
+    [SerializeField] private BooleanReference[] _diceStables;
+    [SerializeField] private IntegerReference[] _diceValues;
+    private PlayerController CurrentPlayer => _players[_currentPlayerId];
     private int _currentPlayerId;
     private int _numberOfStableDice;
     private int _currentDiceValue;
-    public Player CurrentPlayer => _players[_currentPlayerId];
     private bool _hasDiced;
     private Card _currentCard;
-    private CardType _currentCardType;
+    private CardStack _currentCardStack;
     private Vector3 _currentCardOriginalPosition;
     private Quaternion _currentCardOriginalRotation;
 
+    private UnityAction _update;
+
     private void Awake()
     {
-        Ins = this;
         _currentPlayerId = 0;
-    }
-
-    private void Start()
-    {
-        foreach (var dice in _dices)
-            dice.OnStabilize += ReadDiceValue;
     }
 
     private void Update()
     {
+        _update?.Invoke();
+
         if (!_hasDiced)
         {
             if (Input.GetKeyDown(KeyCode.Space))
             {
                 _hasDiced = true;
-                Dice();
+                _dice.Raise();
+                _update = CheckDice;
             }
-            return;
         }
+    }
+
+    private void CheckDice()
+    {
+        foreach (var diceStable in _diceStables)
+            if (diceStable.Value == false)
+                return;
         
-        HUD.Ins.SetActionMenuVisibility(CurrentPlayer.Ready2End && _currentCard == null);
+        ReadDices();
+        _update = null;
     }
 
-    private void Dice()
+    private void ReadDices()
     {
-        _currentDiceValue = 0;
-        _numberOfStableDice = 0;
-        foreach (var dice in _dices)
+        var sumDiceValues = 0;
+        foreach (var diceValue in _diceValues)
+            sumDiceValues += diceValue;
+        
+        CurrentPlayer.Move(sumDiceValues);
+    }
+
+    public void DrawCard(Identity identity)
+    {
+        foreach (var stack in _cardStacks)
         {
-            dice.DoDice();
+            if (stack.Identity == identity)
+            {
+                _currentCardStack = stack;
+                _currentCard = _currentCardStack.Draw();
+                StartCoroutine(PreviewCard());
+                return;
+            }
         }
-    }
-
-    private void ReadDiceValue(int value)
-    {
-        _currentDiceValue += value;
-        _numberOfStableDice++;
-        if (_numberOfStableDice >= _dices.Length)
-        {
-            _players[_currentPlayerId].Move(_currentDiceValue);
-        }
-    }
-
-    public void DrawCard(CardType cardType)
-    {
-        _currentCardType = cardType;
-        _currentCard = _cardStacks[(int)_currentCardType].Draw();
-        StartCoroutine(PreviewCard());
     }
 
     public void TakeCard()
     {
-        CurrentPlayer.AddCard(_currentCard);
+        // CurrentPlayer.AddCard(_currentCard);
         _currentCard = null;
     }
 
     public void ReturnCard()
     {
-        _cardStacks[(int)_currentCardType].Return(_currentCard);
+        _currentCardStack.Return(_currentCard);
         StartCoroutine(PutCard2Stack());
     }
 
     public void EndTurn()
     {
-        CurrentPlayer.EndTurn();
+        // CurrentPlayer.EndTurn();
         _currentPlayerId++;
         if (_currentPlayerId >= _players.Length)
             _currentPlayerId = 0;
-        CurrentPlayer.OnTurn();
+        // CurrentPlayer.OnTurn();
         _hasDiced = false;
     }
 

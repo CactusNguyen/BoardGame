@@ -15,8 +15,8 @@ public class PlayerController : ScriptableObject
         _player.Move(movement);
     }
 
-    public void ChangeFinance()
+    public void ChangeFinance(int amount)
     {
-        
+        _player.ChangeFinance(amount);
     }
 }

@@ -17,13 +17,6 @@ MonoBehaviour:
   Detail: 
   Color: {r: 1, g: 0.80392164, b: 0.16078432, a: 1}
   TextColor: {r: 0, g: 0, b: 0, a: 1}
-  Precondition:
-    _target: {fileID: 11400000, guid: f08a90565e034844193a030f21208c7c, type: 2}
-    _methodName: Free
-    _args: []
-    _dynamic: 0
-    _typeName: Condition, Game, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
-    dirty: 0
   OnFinishTurn:
     m_PersistentCalls:
       m_Calls: []
