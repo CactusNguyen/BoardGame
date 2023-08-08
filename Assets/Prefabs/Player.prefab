@@ -107,7 +107,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8752508534907916263}
-  - component: {fileID: 8752508534907916262}
+  - component: {fileID: 7310515953810105674}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -123,7 +123,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8752508534907916261}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 1.6477575, y: 0, z: -5.03846}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -131,7 +131,7 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &8752508534907916262
+--- !u!114 &7310515953810105674
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -143,5 +143,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c6f7f6f501a2a914ab27af9beb381273, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _color: {r: 1, g: 0, b: 0, a: 1}
+  _color: {r: 1, g: 1, b: 1, a: 1}
   _renderer: {fileID: 8752508534544516677}
+  _money:
+    _useConstant: 0
+    _constantValue: 0
+    _variable: {fileID: 0}
+  _bankrupt: {fileID: 0}
+  Ready2End: 0

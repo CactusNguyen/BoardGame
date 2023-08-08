@@ -1,7 +1,4 @@
-using System;
-using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.Serialization;
 
 public class BoardManager : MonoBehaviour
 {
@@ -12,6 +9,7 @@ public class BoardManager : MonoBehaviour
     [SerializeField] private float _blockSize;
     private Vector3[] _blockPositions;
     public int BlockCount { get; private set; }
+    [SerializeField] private IntegerReference _blockCount;
     private Block[] _blocks;
 
     private void Awake()
@@ -38,6 +36,7 @@ public class BoardManager : MonoBehaviour
 
     private void InitiateBlockPositions()
     {
+        _blockCount.Value = 40;
         BlockCount = 10 * 4;
         _blockPositions = new Vector3[BlockCount];
         var i = 0;

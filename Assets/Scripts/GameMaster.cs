@@ -111,8 +111,6 @@ public class GameMaster : MonoBehaviour
             cardTransform.position = Vector3.Lerp(_currentCardOriginalPosition, _cardPreviewPosition, t);
             cardTransform.rotation = Quaternion.Slerp(_currentCardOriginalRotation, _cardPreviewRotation, t);
         }
-
-        HUD.Ins.ShowCardOptions(_currentCard.Attribute.Precondition.Invoke());
     }
 
     private IEnumerator PutCard2Stack()

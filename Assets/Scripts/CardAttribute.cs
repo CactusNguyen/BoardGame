@@ -9,7 +9,6 @@ public class CardAttribute : ScriptableObject
     public string Detail;
     public Color Color;
     public Color TextColor;
-    public Condition Precondition;
     public UnityEvent OnFinishTurn;
     public UnityEvent OnFinishCycle;
 }

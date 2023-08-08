@@ -1,13 +1,14 @@
-using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
 public class Player : MonoBehaviour
 {
+    [SerializeField] private PlayerController _controller;
     [SerializeField] private Color _color;
     [SerializeField] private Renderer _renderer;
-    [SerializeField] private int _money = 2000;
+    [SerializeField] private IntegerReference _money;
+    [SerializeField] private Channel _bankrupt;
     public bool Ready2End;
     private Transform _transform;
     private int _blockId;
@@ -16,6 +17,7 @@ public class Player : MonoBehaviour
     private void Awake()
     {
         _transform = transform;
+        _controller.Assign(this);
     }
 
     public void OnTurn()
@@ -44,9 +46,9 @@ public class Player : MonoBehaviour
 
     public void ChangeFinance(int changeAmount)
     {
-        _money += changeAmount;
+        _money.Value += changeAmount;
         if (_money <= 0)
-            Debug.Log("Bankrupt");
+            _bankrupt.Raise();
     }
 
     private void FinishCycle()
